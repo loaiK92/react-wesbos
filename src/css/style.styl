@@ -1,29 +1,42 @@
 // Import all partials
 @require './_*.styl'
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 
 header.top
   text-align center
   h1
-    font-size 14.4rem
+    font-size 9rem
+    font-family 'Merienda', cursive
     line-height 0.7 // this font has a wacky baseline
     display flex
-    justify-content: center;
+    justify-content center
+    padding-bottom 2%
+    span
+      .seafood:first-child
+        transform scaleX(1.5)
+      .seafood
+        display block
+        font-size 5.5rem
+        line-height .9
+    .theStore
+      font-size 7rem
+      letter-spacing -5px
+      padding-top 4.5%
+      transform scaleY(1.4)
 
     // This is a bunch of goofy CSS to make the logo look decent
     .ofThe
       display flex
       font-size 3rem
       color orange
+      width 17%
       justify-content: center;
       align-items: center;
       background url('images/anchor.svg') center no-repeat;
       background-size cover
       padding 0 1rem
-      .of
-        padding-right 2rem
-        position relative
-        right -0.5rem
+
   h3
     margin 0
     font-size 2rem
@@ -53,16 +66,13 @@ header.top
 
 .catch-of-the-day
   display flex
-  height 90vh
-  max-width:1500px
+  height 100vh
   margin 0 auto
-  margin-top 5vh
   perspective: 1000px;
   transform-style preserve-3d
   & > *
     flex 1 4 auto
     padding 2rem
-    border 1rem double lighten(black,10%)
     position relative
     background white
     transition all 0.3s
@@ -74,9 +84,7 @@ header.top
       transform translateX(50%) rotateY(6deg) translateX(-50%)
     &:nth-child(2)
       transform translateX(-50%) rotateY(-14deg) translateX(50%)
-      border-left 0
-      border-right 0
-      min-width 300px
+      min-width 22%
     &:last-child
       flex-shrink 1 // take 4x the extra room
       flex-basis 50%
@@ -150,8 +158,8 @@ ul.order
   text-align center
 
 .fish-edit
-  margin-bottom 20px
-  border 2px solid black
+  margin 20px 0 10px
+  border 1px solid black
   overflow hidden
   display flex
   flex-wrap wrap
@@ -187,7 +195,6 @@ ul.order
   transform translateZ(0);
 
 .menu-fish
-  border-bottom 2px solid black
   border-top 1px solid black
   padding-bottom 2rem
   padding-top 2rem
@@ -265,9 +272,9 @@ button, input[type=submit]
     padding 2rem
 
   &.github
-    background #82D465
+    background #24292e
     &:after
-      background darken(#82D465, 20%)
+      background darken(#24292e, 20%)
 
   &.facebook
     background #3864A3
