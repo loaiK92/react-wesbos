@@ -257,6 +257,11 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+@media screen and (max-width: 1300px) {
+  h3 {
+    font-size: 2rem !important;
+  }
+}
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 header.top {
   text-align: center;
@@ -282,12 +287,54 @@ header.top h1 span .seafood {
   font-size: 5.5rem;
   line-height: 0.9;
 }
+@media screen and (max-width: 1300px) {
+  header.top h1 .seafood {
+    font-size: 4rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header.top h1 .seafood {
+    font-size: 5rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  header.top h1 .seafood {
+    font-size: 3.5rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  header.top h1 .seafood {
+    font-size: 2.5rem !important;
+  }
+}
 header.top h1 .theStore {
   font-size: 7rem;
   letter-spacing: -5px;
   padding-top: 4.5%;
   -webkit-transform: scaleY(1.4);
           transform: scaleY(1.4);
+}
+@media screen and (max-width: 1300px) {
+  header.top h1 .theStore {
+    font-size: 5rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header.top h1 .theStore {
+    font-size: 7rem !important;
+    padding-top: 2.5%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header.top h1 .theStore {
+    font-size: 4.5rem !important;
+    padding-top: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header.top h1 .theStore {
+    font-size: 3.5rem !important;
+  }
 }
 header.top h1 .ofThe {
   display: -webkit-box;
@@ -305,6 +352,11 @@ header.top h1 .ofThe {
   background: url("images/anchor.svg") center no-repeat;
   background-size: cover;
   padding: 0 1rem;
+}
+@media screen and (max-width: 1000px) {
+  header.top h1 .ofThe {
+    width: 14% !important;
+  }
 }
 header.top h3 {
   margin: 0;
@@ -346,6 +398,15 @@ header.top h3:after {
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+@media screen and (max-width: 1000px) {
+  .catch-of-the-day {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catch-of-the-day > * {
+    width: 100%;
+  }
 }
 .catch-of-the-day > * {
   -webkit-box-flex: 1;
@@ -517,6 +578,11 @@ ul.order li span.count span {
   margin: 0;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 1300px) {
+  .menu-fish p {
+    font-size: 1.4rem !important;
+  }
+}
 .menu-fish .fish-name {
   margin: 0;
   display: -webkit-box;
@@ -539,6 +605,11 @@ ul.order li span.count span {
   float: left;
   width: 150px;
   margin-right: 1rem;
+}
+@media screen and (max-width: 1300px) {
+  .menu-fish img {
+    width: 120px;
+  }
 }
 button,
 input[type=submit] {
